@@ -13,7 +13,7 @@ function app() {
             html += "<span id='url'>" + url + "</span>";
             $("#result").html(html);
           } else {
-            $("#result").html("Not Found!");
+            $("#result").html(notfound);
           }
         }
       });
