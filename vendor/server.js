@@ -20,6 +20,8 @@ exports.start = function(settings) {
 
   _.extend(env, settings);
 
+  env.cache = new (require('../lib/cache').Cache)(1000);
+
   require('./template').load(env);
 
   setTimeout(function() {
