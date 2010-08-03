@@ -20,15 +20,19 @@ exports.start = function(settings) {
 
   _.extend(env, settings);
 
-  var server = router.getServer();
+  require('./template').load(env);
 
-  _(routers).chain().keys().each(function(key) {
-      server.get(routers[key], require('../app/' + key).app(env));
-  });
+  setTimeout(function() {
+    var server = router.getServer();
 
-  server.get(new RegExp("^/(.+)$"), router.staticDirHandler('./public'));
+    _(routers).chain().keys().each(function(key) {
+        server.get(routers[key], require('../app/' + key).app(env));
+    });
 
-  server.listen(env.port);
+    server.get(new RegExp("^/(.+)$"), router.staticDirHandler('./public'));
+
+    server.listen(env.port);
+  }, 1000);
 
 }
 

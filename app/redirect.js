@@ -1,4 +1,6 @@
 exports.app = function(env) {
+  var problem = env.templates['problem'];
+
   return function(req, res, lang, title) {
     var pageId = parseInt(title.toLowerCase(), 36),
         host = lang + '.wikipedia.org';
@@ -36,19 +38,7 @@ exports.app = function(env) {
         if(url) {
           res.redirect(url);
         } else {
-          var html = '';
-          html += '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
-          html += '<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">';
-          html +=     '<head>';
-          html +=        '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
-          html +=         '<title>Network Problems</title>';
-          html +=         '<link rel="stylesheet" href="/styles/style.css" type="text/css" media="screen" charset="utf-8" />';
-          html +=     '</head>';
-          html +=     '<body>';
-          html +=         '<h2 id="title">Sorry, network problems!</h2>';
-          html +=         '<p id="copy">by Mingli Yuan</p>';
-          html +=     '</body>';
-          html += '</html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+          var html = problem({});
           res.simpleHtml(200, html);
         }
       });
