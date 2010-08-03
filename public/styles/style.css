@@ -1,0 +1,47 @@
+body {
+    background: #000;
+    color: #fff;
+    font: 300 100.1% Fontin-Sans, "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+#title {
+    position: absolute;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    width: 440px;
+    margin: -240px 0 0 -220px;
+    text-align: center;
+    border-bottom: white solid 1px;
+}
+#querybox {
+    position: absolute;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    width: 440px;
+    margin: -180px 0 0 -220px;
+    text-align: center;
+    border-bottom: white solid 1px;
+}
+#result {
+    position: absolute;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    width: 440px;
+    text-align: center;
+    margin: -120px 0 0 -220px;
+}
+#link {
+    color: #fff;
+}
+#copy {
+    bottom: 0;
+    font: 300 .7em Fontin-Sans, "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+    position: absolute;
+    right: 1em;
+    text-align: right;
+}
+
