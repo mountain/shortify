@@ -13,7 +13,7 @@ exports.i18n = {
       lable: 'Title: ',
       wiki: 'Wiki',
       shortit: 'Short It!',
-      notfound: 'Article is not found!'
+      notfound: 'Article was not found!'
     },
     zh: {
       title: '维基缩址服务',
