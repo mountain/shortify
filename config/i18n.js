@@ -1,6 +1,13 @@
 exports.i18n = {
-  supported: ['en', 'zh'],
+  supported: ['cs', 'en', 'zh'],
   msg: {
+    cs: {
+      title: 'Zkracovač adres Wikipedie',
+      lable: 'Název: ',
+      wiki: 'Wiki',
+      shortit: 'Zkrátit!',
+      notfound: 'Článek nebyl nalezen!'
+    },
     en: {
       title: 'Wikipedia Shorturl Service',
       lable: 'Title: ',
