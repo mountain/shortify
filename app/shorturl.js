@@ -1,4 +1,5 @@
-var _ = require('../lib/underscore')._;
+var _    = require('../lib/underscore')._,
+    util = require('../vendor/util');
 
 exports.app = function(env) {
   var supported = env.i18n.supported;
@@ -10,7 +11,8 @@ exports.app = function(env) {
   return function(req, res, lang) {
     var html = undefined;
     if(_.indexOf(supported, lang) > -1) {
-      html = shorturl({baseUrl: baseUrl, lang: lang, msg: msg});
+      var dir = util.htmlDir(env, lang);
+      html = shorturl({baseUrl: baseUrl, lang: lang, msg: msg, dir: dir});
     } else {
       html = unsupported({lang: lang, msg: msg});
     }
