@@ -15,6 +15,13 @@ exports.i18n = {
       shortit: 'Short It!',
       notfound: 'Article was not found!'
     },
+    he: {
+      title: 'שירות קיצור הכתוב של ויקיפדיה',
+      lable: 'כותבת: ',
+      wiki: 'ויקי',
+      shortit: 'לקצר!',
+      notfound: 'הדף לא נמצא!'
+    },
     zh: {
       title: '维基缩址服务',
       lable: '标题： ',
