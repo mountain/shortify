@@ -1,5 +1,6 @@
 exports.i18n = {
-  supported: ['cs', 'en', 'ml', 'zh'],
+  supported: ['cs', 'en', 'he', 'ml', 'zh'],
+  rtl: ['he'],
   msg: {
     cs: {
       title: 'Zkracovač adres Wikipedie',
@@ -21,6 +22,12 @@ exports.i18n = {
       wiki: 'വിക്കി',
       shorten: 'ചെറുതാക്കൂ!',
       notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!'
+    he: {
+      title: 'שירות קיצור הכתוב של ויקיפדיה',
+      lable: 'כותבת: ',
+      wiki: 'ויקי',
+      shorten: 'לקצר!',
+      notfound: 'הדף לא נמצא!'
     },
     zh: {
       title: '维基缩址服务',
