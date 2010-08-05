@@ -2,6 +2,7 @@ function app() {
   $("#submit").click(function() {
     var title = $("#query").val();
     if(title && title !== "") {
+      title = escape(title);
       var query = "http://" + lang + ".wikipedia.org/w/api.php?action=query&prop=info&inprop=url&format=json&callback=?&titles=" + title;
       $.getJSON(query, function(data) {
         if(!data.query) return;
