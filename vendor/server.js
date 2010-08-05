@@ -33,7 +33,7 @@ exports.start = function(settings) {
 
     server.get(new RegExp("^/(.+)$"), router.staticDirHandler('./public'));
 
-    server.listen(env.port);
+    server.listen(env.port, env.host);
   }, 1000);
 
 }
