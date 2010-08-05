@@ -10,9 +10,10 @@ exports.app = function(env) {
 
   return function(req, res, lang) {
     var html = undefined;
+    var lang = lang || 'en';
     if(_.indexOf(supported, lang) > -1) {
       var dir = util.htmlDir(env, lang);
-      html = shorturl({baseUrl: baseUrl, lang: lang, msg: msg, dir: dir});
+      html = shorturl({baseUrl: baseUrl, lang: lang, msg: msg, dir: dir, supported: supported});
     } else {
       html = unsupported({lang: lang, msg: msg});
     }

@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="/styles/style.css" type="text/css" media="screen" charset="utf-8" />
 </head>
 <body>
+    <div id="langs"> [
+    <% for(var ind in supported) { var l = supported[ind]; %>
+      <a href="/s/<%= l %>"><%= l %></a>&nbsp;
+    <% } %>
+    ] </div>
     <h2 id="title"><%= msg[lang]['title'] %></h2>
     <div id="querybox"><%= msg[lang]['lable'] %>&nbsp;
     <input id="query" type=text value="<%= msg[lang]['wiki'] %>">
     <input id="submit" type=submit value="<%= msg[lang]['shorten'] %>"></div>
     <div id="result"></div>
-    <p id="copy">by Mingli Yuan</p>
+    <p id="copy">by <a href="http://github.com/mountain/shortify">Shortify</a></p>
     <script type="text/javascript" charset="utf-8">$(app);</script>
 </body>
 </html>
