@@ -32,7 +32,7 @@ exports.i18n = {
       wiki: 'ויקי',
       shorten: 'לקצר!',
       notfound: 'הדף לא נמצא!',
-      problem: 'Sorry, problem occur!'
+      problem: 'אנו מצטערים על התקלה!'
     },
     zh: {
       title: '维基缩址服务',
