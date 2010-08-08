@@ -7,35 +7,40 @@ exports.i18n = {
       lable: 'Název: ',
       wiki: 'Wiki',
       shorten: 'Zkrátit!',
-      notfound: 'Článek nebyl nalezen!'
+      notfound: 'Článek nebyl nalezen!',
+      problem: 'Sorry, problem occur!'
     },
     en: {
       title: 'Wikipedia Shorturl Service',
       lable: 'Title: ',
       wiki: 'Wiki',
       shorten: 'Shorten It!',
-      notfound: 'Article was not found!'
+      notfound: 'Article was not found!',
+      problem: 'Sorry, problem occur!'
     },
     ml: {
       title: 'വിക്കിപീഡിയ ചെറിയ യു.ആർ.എൽ. സേവനം',
       lable: 'തലക്കെട്ട്: ',
       wiki: 'വിക്കി',
       shorten: 'ചെറുതാക്കൂ!',
-      notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!'
+      notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!',
+      problem: 'Sorry, problem occur!'
     },
     he: {
       title: 'שירות קיצור הכתובת של ויקיפדיה',
       lable: 'שם הדף: ',
       wiki: 'ויקי',
       shorten: 'לקצר!',
-      notfound: 'הדף לא נמצא!'
+      notfound: 'הדף לא נמצא!',
+      problem: 'Sorry, problem occur!'
     },
     zh: {
       title: '维基缩址服务',
       lable: '标题： ',
       wiki: '维基',
       shorten: '缩址！',
-      notfound: '未找到条目！'
+      notfound: '未找到条目！',
+      problem: '抱歉，程序出现问题！'
     }
   }
 };

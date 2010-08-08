@@ -1,17 +1,24 @@
+var util = require('../vendor/util'),
+    sys  = require('sys');
+
 exports.app = function(env) {
   var problem = env.templates['problem'],
       cache = env.cache,
-      admin = env.admin;
+      admin = env.admin,
+      msg = env.i18n.msg;
 
 
   return function(req, res, lang, title) {
-    var pageId = parseInt(title.toLowerCase(), 36),
+    var lang = lang || 'en',
+        pageId = parseInt(title.toLowerCase(), 36),
         host = lang + '.wikipedia.org';
 
     var url = cache?cache.getItem(lang + ':' + pageId):undefined;
 
     if(url) {
       res.redirect(url);
+      sys.puts('cache get: (' + lang + ':' + pageId + ')');
+      sys.puts('cache stats: (hits ' + cache.stats.hits + ', misses ' + cache.stats.misses + ')');
     } else {
       var http = require('http'),
           wp = http.createClient(80, host),
@@ -39,13 +46,16 @@ exports.app = function(env) {
               }
             }
           } catch (e) {
-            require('sys').puts("error when parsing json: " + e);
+            sys.puts('error when parsing json: ' + e);
           }
           if(url) {
             cache.setItem(lang + ':' + pageId, url);
+            sys.puts('cache put: (' + lang + ':' + pageId + ')');
+            sys.puts('cache stats: (hits ' + cache.stats.hits + ', misses ' + cache.stats.misses + ')');
             res.redirect(url);
           } else {
-            var html = problem({});
+            var dir = util.htmlDir(env, lang);
+            var html = problem({lang: lang, msg: msg, dir: dir});
             res.simpleHtml(200, html);
           }
         });
