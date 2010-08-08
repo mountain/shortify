@@ -18,14 +18,6 @@ exports.i18n = {
       notfound: 'Article was not found!',
       problem: 'Sorry, a problem occurred!'
     },
-    ml: {
-      title: 'വിക്കിപീഡിയ ചെറിയ യു.ആർ.എൽ. സേവനം',
-      lable: 'തലക്കെട്ട്: ',
-      wiki: 'വിക്കി',
-      shorten: 'ചെറുതാക്കൂ!',
-      notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!',
-      problem: 'Sorry, a problem occurred!'
-    },
     he: {
       title: 'שירות קיצור הכתובת של ויקיפדיה',
       lable: 'שם הדף: ',
@@ -33,6 +25,14 @@ exports.i18n = {
       shorten: 'לקצר!',
       notfound: 'הדף לא נמצא!',
       problem: 'אנו מצטערים על התקלה!'
+    },
+    ml: {
+      title: 'വിക്കിപീഡിയ ചെറിയ യു.ആർ.എൽ. സേവനം',
+      lable: 'തലക്കെട്ട്: ',
+      wiki: 'വിക്കി',
+      shorten: 'ചെറുതാക്കൂ!',
+      notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!',
+      problem: 'Sorry, a problem occurred!'
     },
     zh: {
       title: '维基缩址服务',
