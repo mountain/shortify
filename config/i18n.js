@@ -8,7 +8,7 @@ exports.i18n = {
       wiki: 'Wiki',
       shorten: 'Zkrátit!',
       notfound: 'Článek nebyl nalezen!',
-      problem: 'Sorry, a problem occurred!'
+      problem: 'Nastal problém!'
     },
     en: {
       title: 'Wikipedia Shorturl Service',
