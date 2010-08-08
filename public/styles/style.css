@@ -5,6 +5,9 @@ body {
     width: 100%;
     height: 100%;
 }
+a {
+    color: #fff;
+}
 #langs {
     position: absolute;
     height: 20px;
@@ -34,6 +37,16 @@ body {
     text-align: center;
     border-bottom: white solid 1px;
 }
+#helpus {
+    position: absolute;
+    height: 165px;
+    left: 50%;
+    top: 50%;
+    width: 440px;
+    margin: -180px 0 0 -220px;
+    text-align: left;
+    border-bottom: white solid 1px;
+}
 #result {
     position: absolute;
     height: 40px;
@@ -43,10 +56,7 @@ body {
     text-align: center;
     margin: -120px 0 0 -220px;
 }
-#link {
-    color: #fff;
-}
-#copy {
+#team {
     bottom: 0;
     font: 300 .7em Fontin-Sans, "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
     position: absolute;

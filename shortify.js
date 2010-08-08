@@ -14,16 +14,22 @@ fs.readFile(process.argv[2] || path + 'settings.json', function(err, data) {
     var settings = {};
 
     if (err) {
-        sys.puts('No settings.json found ('+err+'). Using default settings');
+      sys.puts('No settings.json found ('+err+'). Using default settings');
     } else {
-        try {
-            settings = JSON.parse(data.toString('utf8',0,data.length));
-            settings.path = path;
-        } catch (e) {
-            sys.puts('Error parsing settings.json: '+e);
-            process.exit(1);
-        }
+      try {
+        settings = JSON.parse(data.toString('utf8',0,data.length));
+        settings.path = path;
+      } catch (e) {
+        sys.puts('Error parsing settings.json: '+e);
+        process.exit(1);
+      }
     }
+
+    if(!settings.admin) {
+      sys.puts('email adress of administrator was not setted!');
+      process.exit(1);
+    }
+
     server.start(settings);
 });
 

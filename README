@@ -6,11 +6,20 @@ In order to help people on this problem, We create this small project to solve i
 It uses MediaWiki API call to get pageId by the title, and then convert pageId by base 36 to the short url.
 To reduce the frequency of API call, a simple cache was used.
 
-So far, 5 languges were supported.
+===Install===
+
+Requirement: Node.js is installed.
+
+Steps are as below:
+
+* Clone the repository: git clone git://github.com/mountain/shortify.git
+* Change directory to shortify: cd shortify
+* Edit the settings: nano settings.json
+* Start the service: node shortify.js
 
 ===Acknowledgement===
 
-Thanks for people's contribution to localize this small software:
+Thanks for people's contribution to localize this small software, So far, 5 languges were supported.
 
 * mountain: Chinese language
 * svick: Czech language

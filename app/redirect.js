@@ -1,6 +1,8 @@
 exports.app = function(env) {
-  var problem = env.templates['problem'];
-  var cache = env.cache;
+  var problem = env.templates['problem'],
+      cache = env.cache,
+      admin = env.admin;
+
 
   return function(req, res, lang, title) {
     var pageId = parseInt(title.toLowerCase(), 36),
@@ -17,7 +19,7 @@ exports.app = function(env) {
             '/w/api.php?action=query&prop=info&inprop=url&format=json&callback=?&pageids=' + pageId,
             {
               'host': host,
-              'User-Agent': 'WikipediaShorturl/me@mingli-yuan.info'
+              'User-Agent': 'WikipediaShorturl/' + admin
             }
           );
       request.end();
