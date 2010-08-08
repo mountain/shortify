@@ -1,5 +1,5 @@
 exports.i18n = {
-  supported: ['cs', 'en', 'he', 'ml', 'zh'],
+  supported: ['cs', 'en', 'he', 'ml', 'ru', 'zh'],
   rtl: ['he'],
   msg: {
     cs: {
@@ -33,6 +33,14 @@ exports.i18n = {
       shorten: 'ചെറുതാക്കൂ!',
       notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!',
       problem: 'Sorry, a problem occurred!'
+    },
+    ru: {
+      title: 'Служба сокращения адреса Википедии',
+      lable: 'Заголовок: ',
+      wiki: 'Вики',
+      shorten: 'Сократить!',
+      notfound: 'Страница не найдена!',
+      problem: 'Мы извиняемся за неисправность!'
     },
     zh: {
       title: '维基缩址服务',
