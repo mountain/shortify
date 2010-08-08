@@ -8,7 +8,7 @@ exports.i18n = {
       wiki: 'Wiki',
       shorten: 'Zkrátit!',
       notfound: 'Článek nebyl nalezen!',
-      problem: 'Sorry, problem occur!'
+      problem: 'Sorry, a problem occurred!'
     },
     en: {
       title: 'Wikipedia Shorturl Service',
@@ -16,7 +16,7 @@ exports.i18n = {
       wiki: 'Wiki',
       shorten: 'Shorten It!',
       notfound: 'Article was not found!',
-      problem: 'Sorry, problem occur!'
+      problem: 'Sorry, a problem occurred!'
     },
     ml: {
       title: 'വിക്കിപീഡിയ ചെറിയ യു.ആർ.എൽ. സേവനം',
@@ -24,7 +24,7 @@ exports.i18n = {
       wiki: 'വിക്കി',
       shorten: 'ചെറുതാക്കൂ!',
       notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!',
-      problem: 'Sorry, problem occur!'
+      problem: 'Sorry, a problem occurred!'
     },
     he: {
       title: 'שירות קיצור הכתובת של ויקיפדיה',
