@@ -1,10 +1,10 @@
 ==A Shorturl Service for Wikipedia Projects by Node.js==
 
-For many languages which dose not use Latin characters, the URL of an articles in Wikipedia might be very long.
-In order to help people on this problem, We create this small project to solve it.
+For many languages which do not use Latin characters the URL of an articles in Wikipedia might be very long.
+We created this small project to help people solve this problem.
 
-It uses MediaWiki API call to get pageId by the title, and then convert pageId by base 36 to the short url.
-To reduce the frequency of API call, a simple cache was used.
+It uses the MediaWiki API call to get pageId by the title, and then convert pageId by base 36 to the short URL.
+To reduce the frequency of API calls, a simple cache was used.
 
 ===Install===
 
@@ -19,11 +19,12 @@ Steps are as below:
 
 ===Acknowledgement===
 
-Thanks for people's contribution to localize this small software, So far, 5 languges were supported.
+Thanks for people's contribution to localize this small software. So far, 5 languges were supported:
 
 * mountain: Chinese language
 * svick: Czech language
 * mountain and Casey: English language
-* amire80: Hebrew language
+* Amir E. Aharoni (amire80): Hebrew language
 * Sadik Khalid: Malayalam language
+* Amir E. Aharoni (amire80): Russian language
 
