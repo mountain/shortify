@@ -31,12 +31,16 @@ var url_parse = require("url").parse;
 
 // Used as a simple, convient 404 handler.
 function notFound(req, res, message) {
-  message = (message || "Not Found\n") + "";
-  res.writeHead(404, {
-    "Content-Type": "text/plain",
-    "Content-Length": message.length
-  });
-  res.write(message);
+  try {
+    message = (message || "Not Found\n") + "";
+    res.writeHead(404, {
+      "Content-Type": "text/plain",
+      "Content-Length": message.length
+    });
+    res.write(message);
+  } catch (e) {
+    res.writeHead(404, {});
+  }
   res.end();
 }
 
