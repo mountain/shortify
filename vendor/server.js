@@ -1,4 +1,5 @@
 var _ = require('../lib/underscore')._,
+    sys = require('sys'),
     router = require('./node-router'),
     i18n = require('../config/i18n').i18n,
     routers = require('../config/routers').routers;
@@ -23,10 +24,15 @@ exports.start = function(settings) {
   var cacheSize = env.cacheSize || 1000;
   env.cache = new (require('../lib/cache').Cache)(cacheSize);
 
+  env.logger = (function() {
+    sys.print((new Date()).toUTCString() + " - ");
+    sys.puts(_.toArray(arguments).join(" "));
+  });
+
   require('./template').load(env);
 
   setTimeout(function() {
-    var server = router.getServer();
+    var server = router.getServer(env.logger);
 
     _(routers).chain().keys().each(function(key) {
         server.get(routers[key], require('../app/' + key).app(env));

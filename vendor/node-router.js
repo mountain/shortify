@@ -46,10 +46,9 @@ function logify(req, res, logger) {
   var end = res.end;
   res.end = function () {
     // Common Log Format (mostly)
-    logger((req.socket && req.socket.remoteAddress) + " - - [" + (new Date()).toUTCString() + "]"
-     + " \"" + req.method + " " + req.url
+    logger((req.socket && req.socket.remoteAddress) + " - \"" + req.method + " " + req.url
      + " HTTP/" + req.httpVersionMajor + "." + req.httpVersionMinor + "\" "
-     + res.statusCode + " - \""
+     + " - " + res.statusCode + " - \""
      + (req.headers['referer'] || "") + "\" \"" + (req.headers["user-agent"] ? req.headers["user-agent"].split(' ')[0] : '') + "\"");
     return end.apply(this, arguments);
   }
@@ -536,4 +535,3 @@ var mime = exports.mime = {
             ".zip"   : "application/zip"
           }
 };
-
