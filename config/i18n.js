@@ -1,5 +1,5 @@
 exports.i18n = {
-  supported: ['cs', 'en', 'he', 'ml', 'zh'],
+  supported: ['cs', 'en', 'he', 'ml', 'ru', 'zh'],
   rtl: ['he'],
   msg: {
     cs: {
@@ -8,7 +8,7 @@ exports.i18n = {
       wiki: 'Wiki',
       shorten: 'Zkrátit!',
       notfound: 'Článek nebyl nalezen!',
-      problem: 'Sorry, problem occur!'
+      problem: 'Nastal problém!'
     },
     en: {
       title: 'Wikipedia Shorturl Service',
@@ -16,15 +16,7 @@ exports.i18n = {
       wiki: 'Wiki',
       shorten: 'Shorten It!',
       notfound: 'Article was not found!',
-      problem: 'Sorry, problem occur!'
-    },
-    ml: {
-      title: 'വിക്കിപീഡിയ ചെറിയ യു.ആർ.എൽ. സേവനം',
-      lable: 'തലക്കെട്ട്: ',
-      wiki: 'വിക്കി',
-      shorten: 'ചെറുതാക്കൂ!',
-      notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!',
-      problem: 'Sorry, problem occur!'
+      problem: 'Sorry, a problem occurred!'
     },
     he: {
       title: 'שירות קיצור הכתובת של ויקיפדיה',
@@ -32,7 +24,23 @@ exports.i18n = {
       wiki: 'ויקי',
       shorten: 'לקצר!',
       notfound: 'הדף לא נמצא!',
-      problem: 'Sorry, problem occur!'
+      problem: 'אנו מצטערים על התקלה!'
+    },
+    ml: {
+      title: 'വിക്കിപീഡിയ ചെറിയ യു.ആർ.എൽ. സേവനം',
+      lable: 'തലക്കെട്ട്: ',
+      wiki: 'വിക്കി',
+      shorten: 'ചെറുതാക്കൂ!',
+      notfound: 'ലേഖനം കണ്ടെത്താനായില്ല!',
+      problem: 'Sorry, a problem occurred!'
+    },
+    ru: {
+      title: 'Служба сокращения адреса Википедии',
+      lable: 'Заголовок: ',
+      wiki: 'Вики',
+      shorten: 'Сократить!',
+      notfound: 'Страница не найдена!',
+      problem: 'Мы извиняемся за неисправность!'
     },
     zh: {
       title: '维基缩址服务',
