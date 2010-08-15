@@ -1,5 +1,5 @@
 exports.i18n = {
-  supported: ['cs', 'en', 'he', 'ml', 'ru', 'zh'],
+  supported: ['cs', 'en', 'he', 'ml', 'ru', 'ta', 'zh'],
   rtl: ['he'],
   msg: {
     cs: {
@@ -41,6 +41,14 @@ exports.i18n = {
       shorten: 'Сократить!',
       notfound: 'Страница не найдена!',
       problem: 'Мы извиняемся за неисправность!'
+    },
+    ta: {
+      title: 'விக்கிபீடியா குறுஞ்சுட்டி சேவை'
+      lable: 'தலைப்பு'
+      wiki: 'விக்கி'
+      shorten: 'குறுக்கு'
+      notfound: 'கட்டுரை காணப்படவில்லை'
+      problem: 'மன்னிக்கவும், பிழை நேரிட்டது'
     },
     zh: {
       title: '维基缩址服务',
