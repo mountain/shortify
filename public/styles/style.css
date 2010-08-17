@@ -14,16 +14,16 @@ a {
     left: 50%;
     top: 50%;
     width: 440px;
-    margin: -250px 0px 0px -220px;
+    margin: -270px 0px 0px -220px;
     text-align: center;
 }
 #title {
     position: absolute;
-    height: 40px;
+    height: 60px;
     left: 50%;
     top: 50%;
     width: 440px;
-    margin: -230px 5px 5px -220px;
+    margin: -250px 5px 5px -220px;
     text-align: center;
     border-bottom: white solid 1px;
 }
