@@ -1,5 +1,5 @@
 exports.i18n = {
-  supported: ['cs', 'en', 'he', 'ml', 'ru', 'ta', 'zh'],
+  supported: ['cs', 'el', 'en', 'he', 'ml', 'ru', 'ta', 'zh'],
   rtl: ['he'],
   msg: {
     cs: {
@@ -9,6 +9,14 @@ exports.i18n = {
       shorten: 'Zkrátit!',
       notfound: 'Článek nebyl nalezen!',
       problem: 'Nastal problém!'
+    },
+    el: {
+      title: 'Υπηρεσία Συντόμευεσης Βικιπαιδείας',
+      lable: 'Τίτλος: ',
+      wiki: 'Wiki',
+      shorten: 'Συντόμευσε το!',
+      notfound: 'Το άρθρο δεν βρέθηκε!',
+      problem: 'Συγνώμη, υπήρξε πρόβλημα!'
     },
     en: {
       title: 'Wikipedia Shorturl Service',
