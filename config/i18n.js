@@ -1,7 +1,15 @@
 exports.i18n = {
-  supported: ['cs', 'el', 'en', 'he', 'ml', 'ru', 'ta', 'zh'],
-  rtl: ['he'],
+  supported: ['ar', 'cs', 'el', 'en', 'he', 'ml', 'ru', 'ta', 'zh'],
+  rtl: ['ar', 'he'],
   msg: {
+    ar: {
+      title: 'خدمة عناوين ويكيبيديا القصيرة',
+      lable: 'المقالة: ',
+      wiki: 'ويكي',
+      shorten: 'قصّرها!',
+      notfound: 'لم يتم العثور على المقالة!',
+      problem: 'عذرًا، حدثت مشكلة!'
+    },
     cs: {
       title: 'Zkracovač adres Wikipedie',
       lable: 'Název: ',
